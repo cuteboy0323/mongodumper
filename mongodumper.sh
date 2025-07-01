@@ -4,8 +4,6 @@ set -u
 set -e
 set -o pipefail
 
-echo "Here"
-
 trap "{ printf 'ERROR: caught non-zero exit code\n'; exit 1; }" ERR
 
 TODAY="$(date +%Y%m%d%H%M)"
